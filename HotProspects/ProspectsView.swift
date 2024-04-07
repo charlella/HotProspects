@@ -35,7 +35,6 @@ struct ProspectsView: View {
     }
     
     var body: some View {
-        NavigationStack {
             List(prospects, selection: $selectedProspects) { prospect in
                 NavigationLink {
                     EditingView(prospect: prospect)
@@ -102,17 +101,18 @@ struct ProspectsView: View {
                 CodeScannerView(codeTypes: [.qr], simulatedData: "Paul Hudson\npaul@hackingwithswift.com", completion: handleScan)
             }
         }
-    }
     
-    init(filter: FilterType) {
+    init(filter: FilterType, sort: SortDescriptor<Prospect>) {
         self.filter = filter
-        
+
         if filter != .none {
             let showContactedOnly = filter == .contacted
-            
+
             _prospects = Query(filter: #Predicate {
                 $0.isContacted == showContactedOnly
-            }, sort: [SortDescriptor(\Prospect.name)])
+            }, sort: [sort])
+        } else {
+            _prospects = Query(sort: [sort])
         }
     }
     
@@ -174,6 +174,6 @@ struct ProspectsView: View {
 }
 
 #Preview {
-    ProspectsView(filter: .none)
-        .modelContainer(for: Prospect.self)
+    ProspectsView(filter: .none, sort: SortDescriptor(\Prospect.name))
+            .modelContainer(for: Prospect.self)
 }

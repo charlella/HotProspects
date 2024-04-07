@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BA4BB1192BC2EE4A0021C3B4 /* EditingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4BB1182BC2EE4A0021C3B4 /* EditingView.swift */; };
+		BA4BB11B2BC327F40021C3B4 /* SortableProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4BB11A2BC327F40021C3B4 /* SortableProspectsView.swift */; };
 		BAA8050F2BBB11C000B915F6 /* HotProspectsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA8050E2BBB11C000B915F6 /* HotProspectsApp.swift */; };
 		BAA805112BBB11C000B915F6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA805102BBB11C000B915F6 /* ContentView.swift */; };
 		BAA805132BBB11C400B915F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAA805122BBB11C400B915F6 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		BA4BB1182BC2EE4A0021C3B4 /* EditingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditingView.swift; sourceTree = "<group>"; };
+		BA4BB11A2BC327F40021C3B4 /* SortableProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortableProspectsView.swift; sourceTree = "<group>"; };
 		BAA8050B2BBB11C000B915F6 /* HotProspects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotProspects.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAA8050E2BBB11C000B915F6 /* HotProspectsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotProspectsApp.swift; sourceTree = "<group>"; };
 		BAA805102BBB11C000B915F6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 		BAA805022BBB11C000B915F6 = {
 			isa = PBXGroup;
 			children = (
+				BA4BB11A2BC327F40021C3B4 /* SortableProspectsView.swift */,
 				BA4BB1182BC2EE4A0021C3B4 /* EditingView.swift */,
 				BAA8050D2BBB11C000B915F6 /* HotProspects */,
 				BAA8050C2BBB11C000B915F6 /* Products */,
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAA8051F2BBF2B1500B915F6 /* MeView.swift in Sources */,
+				BA4BB11B2BC327F40021C3B4 /* SortableProspectsView.swift in Sources */,
 				BAA805212BBF307200B915F6 /* Prospect.swift in Sources */,
 				BAA8051D2BBF2AEF00B915F6 /* ProspectsView.swift in Sources */,
 				BA4BB1192BC2EE4A0021C3B4 /* EditingView.swift in Sources */,
